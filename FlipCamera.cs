@@ -5,6 +5,10 @@
 		
 	Flip/Mirror > Camera?
 		https://answers.unity.com/questions/20337/flipmirror-camera.html
+		
+注意:componentの順序について
+	本scriptは、Post Process Layer(5.3.1では、Bloom)より後ろに置くこと.
+	otherwise:flip時に、objectのtextureが反転されてしまった.
 ************************************************************/
 using UnityEngine;
 using System.Collections;
